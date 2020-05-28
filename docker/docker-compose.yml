@@ -1,0 +1,13 @@
+version: '2.4'
+services:
+    app:
+        build: .
+        container_name: 'app'
+        working_dir: /src/
+        volumes:
+            - ../src/:/src/
+            - ../data/:/data/
+        environment:
+            - NVIDIA_VISIBLE_DEVICES='"device=0"'
+            - 'TZ=Asia/Tokyo'
+        command: 'tail -f /dev/null'
