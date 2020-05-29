@@ -10,5 +10,6 @@ docker run -it --rm \
     -v ${CURRENT_PATH}/src/:/src/ \
     -v ${CURRENT_PATH}/data/:/data/ \
     -w /src \
+    --ipc=host \
     ${IMAGE_NAME} \
     /bin/bash

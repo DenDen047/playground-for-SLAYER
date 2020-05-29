@@ -34,5 +34,4 @@ RUN pip install -r requirements.txt
 RUN nvcc --version
 RUN python3.6 setup.py install
 
-ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
-ENV NVIDIA_VISIBLE_DEVICES=all
+ENV MPLBACKEND=Agg
