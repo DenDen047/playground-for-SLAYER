@@ -1,1 +1,7 @@
-playground-for-SLAYER
+# playground-for-SLAYER
+
+## Usage
+
+```sh
+$ ./run.sh
+```
