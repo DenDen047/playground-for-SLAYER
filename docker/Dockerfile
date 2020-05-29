@@ -34,5 +34,5 @@ RUN pip install -r requirements.txt
 RUN nvcc --version
 RUN python3.6 setup.py install
 
-WORKDIR /work/slayerPytorch/test
-RUN python3.6 -m unittest
+ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
+ENV NVIDIA_VISIBLE_DEVICES=all
